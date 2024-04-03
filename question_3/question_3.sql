@@ -1,4 +1,4 @@
-SELECT c.ad, c.soyad, c.maas
-FROM calisanlar c
-INNER JOIN birimler b ON c.calisan_birim_id = b.birim_id
-WHERE b.birim_ad = 'Yazılım' OR b.birim_ad = 'Donanım';
+SELECT cl.ad, cl.soyad, cl.maas
+FROM calisanlar cl
+INNER JOIN birimler brm ON cl.calisan_birim_id = brm.birim_id
+WHERE brm.birim_ad = 'Yazılım' OR brm.birim_ad = 'Donanım';
